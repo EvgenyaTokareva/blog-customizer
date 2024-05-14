@@ -7,11 +7,7 @@ type UseEnterOptionSubmit = {
 	optionRef: React.RefObject<HTMLLIElement>;
 };
 
-export const useEnterOptionSubmit = ({
-	onClick,
-	value,
-	optionRef,
-}: UseEnterOptionSubmit) => {
+export const useEnterOptionSubmit = ({ onClick, value, optionRef }: UseEnterOptionSubmit) => {
 	useEffect(() => {
 		const option = optionRef.current;
 		if (!option) return;

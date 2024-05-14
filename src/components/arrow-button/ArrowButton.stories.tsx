@@ -9,11 +9,13 @@ const meta: Meta<typeof ArrowButton> = {
 export default meta;
 type Story = StoryObj<typeof ArrowButton>;
 
+const basikFunction = () => {};
+
 export const ArrowButtonStory: Story = {
 	render: () => {
 		return (
 			<>
-				<ArrowButton />
+				<ArrowButton onClick={basikFunction} isOpen={false} />
 			</>
 		);
 	},
